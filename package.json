@@ -7,6 +7,7 @@
     "lint": "eslint .",
     "test": "vitest run",
     "watch": "vitest",
+    "e2e": "playwright test"
   },
   "dependencies": {
     "@dnd-kit/core": "6.3.1",
@@ -22,6 +23,7 @@
     "redux-persist": "6.0.0"
   },
   "devDependencies": {
+    "@playwright/test": "1.62.1",
     "@tailwindcss/postcss": "4.3.3",
     "@testing-library/jest-dom": "7.0.1",
     "@testing-library/react": "16.3.2",
