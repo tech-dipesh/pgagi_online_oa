@@ -13,7 +13,7 @@ export function DarkModeToggle() {
       type="button"
       onClick={() => dispatch(setDarkMode(!darkMode))}
       aria-label="Toggle dark mode"
-      className="flex h-9 w-9 items-center justify-center rounded-full border border-line text-ink-muted hover:text-[var(--color-ink)]"
+      className="flex cursor-pointer h-9 w-9 items-center justify-center rounded-full border border-line text-ink-muted hover:text-ink"
     >
       {darkMode ? <Sun size={16} /> : <Moon size={16} />}
     </button>

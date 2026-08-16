@@ -9,8 +9,8 @@ export function Header() {
       <SearchBar />
       <div className="flex items-center gap-3">
         <DarkModeToggle />
-        <div className="flex h-9 w-9 items-center justify-center rounded-full bg-tech font-mono text-xs font-medium text-white">
-          DS
+        <div className="flex cursor-pointer h-9 w-9 items-center justify-center rounded-full bg-tech font-mono text-xs font-medium text-white">
+          YN
         </div>
       </div>
     </header>

@@ -29,7 +29,7 @@ export function Sidebar({ activeSection, onSelectSection }: SidebarProps) {
             key={section}
             type="button"
             onClick={() => onSelectSection(section)}
-            className={`flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors ${
+            className={`flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors ${
               isActive
                 ? "bg-canvas font-medium text-ink"
                 : "text-ink-muted hover:bg-canvas"
