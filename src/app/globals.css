@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --color-canvas: #f6f5f2;
+  --color-surface: #ffffff;
+  --color-ink: #14181f;
+  --color-ink-muted: #5b6270;
+  --color-line: #e4e1d9;
+  --color-tech: #4c5fd5;
+  --color-sports: #1f8a5f;
+  --color-finance: #b8860b;
+  --color-entertainment: #c23b6b;
+  --color-social: #1897a6;
+}
+
+.dark {
+  --color-canvas: #12141a;
+  --color-surface: #191c24;
+  --color-ink: #f1f0ec;
+  --color-ink-muted: #9aa0ad;
+  --color-line: #2a2e38;
+  --color-tech: #7c8bf0;
+  --color-sports: #3fbf85;
+  --color-finance: #e0ad3d;
+  --color-entertainment: #e4699a;
+  --color-social: #4bc4d3;
+}
+
+@theme inline {
+  --color-canvas: var(--color-canvas);
+  --color-surface: var(--color-surface);
+  --color-ink: var(--color-ink);
+  --color-ink-muted: var(--color-ink-muted);
+  --color-line: var(--color-line);
+  --color-tech: var(--color-tech);
+  --color-sports: var(--color-sports);
+  --color-finance: var(--color-finance);
+  --color-entertainment: var(--color-entertainment);
+  --color-social: var(--color-social);
+  --font-display: var(--font-space-grotesk);
+  --font-body: var(--font-inter);
+  --font-mono: var(--font-plex-mono);
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
