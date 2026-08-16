@@ -16,7 +16,7 @@ export function SearchBar() {
   }, [debouncedValue, dispatch])
 
   return (
-    <div className="flex w-full max-w-md items-center gap-2 rounded-full border border-line bg-canvas px-4 py-2">
+    <div className="flex w-full max-w-md items-center gap-2 rounded-full border border-line bg-[var(--color-canvas)] px-4 py-2">
       <Search size={16} className="text-ink-muted" />
       <input
         value={inputValue}

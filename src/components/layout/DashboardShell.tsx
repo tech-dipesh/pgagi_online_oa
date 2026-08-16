@@ -24,7 +24,7 @@ export function DashboardShell() {
       <div className="flex flex-1 flex-col">
         <Header />
         <main className="flex-1 px-6 py-6">
-          <h1 className="mb-4 font-display text-2xl font-semibold">
+          <h1 className="mb-4 font-[family-name:var(--font-display)] text-2xl font-semibold">
             {sectionTitles[activeSection]}
           </h1>
           {activeSection === "feed" && <FeedSection />}

@@ -12,7 +12,7 @@ export function FavoritesSection() {
 
   if (favoriteItems.length === 0) {
     return (
-      <div className="rounded-xl border border-dashed border-line p-10 text-center text-ink-muted">
+      <div className="rounded-xl border border-dashed bg-surface)] p-10 text-center text-ink-muted">
         You have not starred anything yet. Tap the star on a card to save it here.
       </div>
     )

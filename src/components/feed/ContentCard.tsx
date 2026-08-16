@@ -21,14 +21,11 @@ function CardHeadline({ item }: { item: FeedItem }) {
   if (item.kind === "news") {
     return (
       <div>
-        <p className="text-sm text-ink-muted">
-          
-        </p>
+        <p className="text-sm text-ink-muted">{item.source}</p>
         <h3 className="mt-1 font-display text-lg font-semibold leading-snug">
           {item.headline}
         </h3>
         <p className="mt-2 text-sm text-ink-muted">{item.summary}</p>
-        
       </div>
     )
   }
@@ -36,7 +33,7 @@ function CardHeadline({ item }: { item: FeedItem }) {
   if (item.kind === "movie") {
     return (
       <div>
-        <h3 className="text-ink-muted text-lg font-semibold leading-snug">
+        <h3 className="font-display text-lg font-semibold leading-snug">
           {item.title}
         </h3>
         <p className="mt-1 text-sm text-ink-muted">{item.tagline}</p>
@@ -103,7 +100,7 @@ export function ContentCard({ item, dragHandleProps }: ContentCardProps) {
     <motion.article
       layout
       whileHover={{ y: -2 }}
-      className="flex gap-4 overflow-hidden rounded-xl border border-line)] bg-surface p-4 shadow-sm"
+      className="flex gap-4 overflow-hidden rounded-xl border border-line bg-surface p-4 shadow-sm"
       style={{ borderLeftWidth: 4, borderLeftColor: categoryVar(category) }}
     >
       <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-lg">

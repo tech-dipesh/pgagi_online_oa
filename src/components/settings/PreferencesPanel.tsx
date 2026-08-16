@@ -12,8 +12,8 @@ export function PreferencesPanel() {
   const favoriteCategories = useAppSelector((state) => state.preferences.favoriteCategories)
 
   return (
-    <div className="max-w-md rounded-xl border border-[var(--color-line)] bg-[var(--color-surface)] p-6">
-      <h2 className="font-[family-name:var(--font-display)] text-lg font-semibold">Content preferences</h2>
+    <div className="max-w-md rounded-xl border border-line bg-surface p-6">
+      <h2 className="font-display text-lg font-semibold">Content preferences</h2>
       <p className="mt-1 text-sm text-ink-muted">
         Choose which categories show up in your feed and trending sections.
       </p>
@@ -23,7 +23,7 @@ export function PreferencesPanel() {
           return (
             <label
               key={category}
-              className="flex cursor-pointer items-center justify-between rounded-lg border border-[var(--color-line)] px-3 py-2"
+              className="flex cursor-pointer items-center justify-between rounded-lg border border-line px-3 py-2"
             >
               <span className="flex items-center gap-2 text-sm">
                 <span

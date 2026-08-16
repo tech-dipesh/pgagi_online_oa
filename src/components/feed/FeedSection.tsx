@@ -74,7 +74,7 @@ export function FeedSection() {
 
   if (filteredItems.length === 0) {
     return (
-      <div className="rounded-xl border border-dashed border-line p-10 text-center text-ink-muted"> 
+      <div className="rounded-xl border border-dashed border-line p-10 text-center text-ink-muted">
         Nothing matches your search and category settings right now. Try adjusting your preferences.
       </div>
     )
