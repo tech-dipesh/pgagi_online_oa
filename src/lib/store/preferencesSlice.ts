@@ -1,14 +1,17 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit"
 import type { ContentCategory } from "@/lib/mock-data/types"
+import type { SupportedLanguage } from "@/lib/i18n/config"
 
 type PreferencesState = {
   favoriteCategories: ContentCategory[]
   darkMode: boolean
+  language: SupportedLanguage
 }
 
 const initialState: PreferencesState = {
   favoriteCategories: ["technology", "sports", "finance", "entertainment", "social"],
   darkMode: false,
+  language: "en",
 }
 
 const preferencesSlice = createSlice({
@@ -26,8 +29,11 @@ const preferencesSlice = createSlice({
     setDarkMode(state, action: PayloadAction<boolean>) {
       state.darkMode = action.payload
     },
+    setLanguage(state, action: PayloadAction<SupportedLanguage>) {
+      state.language = action.payload
+    },
   },
 })
 
-export const { toggleCategory, setDarkMode } = preferencesSlice.actions
+export const { toggleCategory, setDarkMode, setLanguage } = preferencesSlice.actions
 export default preferencesSlice.reducer

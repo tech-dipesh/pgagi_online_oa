@@ -13,11 +13,13 @@ import storage from "redux-persist/lib/storage"
 import preferencesReducer from "./preferencesSlice"
 import favoritesReducer from "./favoritesSlice"
 import feedReducer from "./feedSlice"
+import liveFeedReducer from "./liveFeedSlice"
 
 const rootReducer = combineReducers({
   preferences: preferencesReducer,
   favorites: favoritesReducer,
   feed: feedReducer,
+  liveFeed: liveFeedReducer,
 })
 
 const persistConfig = {
