@@ -1,5 +1,5 @@
 # Personlized Content Dashboard Content:
-This is the Frontend Only Dashboard with a mock datta  static of news, movie recommedations socila posts on the entrie to single feed.
+This is the Frontend Only Dashboard with a mock data static of news content, movie recommendations social posts on the Entire Single Feed With other Extensive Features.
 
 ## Stack
 - Next.js
@@ -10,16 +10,16 @@ This is the Frontend Only Dashboard with a mock datta  static of news, movie rec
 - Tailwind Css
 - Vitest
 - Playwright
-Server Send Events
-- NexAuth
+- Server Send Events
+- NextAuth
 - Prisma 
 - react-i18next for Multi Language
 
 ## Data
-The Data is Static with alll the Content: (news, movie, social posts)
-All the mock data are the postdd from a tmdb for the image
+The Data is Static with all the Content: (news, movie, social posts)
+All the mock data are the Takend From the Online Resources.
 All the Everything else the placeholder
-User accounts and profielre are sotre don the database
+The User Accounts And Profile Are Stored on the Postgres Db.
 
 ## Run:
 ```bash
@@ -28,9 +28,8 @@ pnpm dev
 ```
 
 ## Features
--  feed with news, movie recommendations, and social posts
-- Category preferences (technology, sports, finance, entertainment, social)
-  across reloads
+- feed with news, movie recommendations, and social posts
+- Category preferences (technology, sports, finance, entertainment, social) across reloads
 - Drag-and-drop reordering 
 - Debounced search
 - Infinite scroll 
@@ -40,10 +39,8 @@ pnpm dev
 - Simulated breaking item every quarter minute
 - Languager Switcher with persisted.
 - Signup Signin With a Real Account.
-
+- Server Send Events Real Time Updates.
 
 ## Env:
 DATABASE_URL:Our Postgres db
 AUTH_SECRET: random openssl string
-
-**The WebSocker/SEE, real time update Need to Add**
