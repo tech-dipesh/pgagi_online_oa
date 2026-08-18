@@ -1,5 +1,3 @@
-"use client"
-
 import { SearchBar } from "@/components/search/SearchBar"
 import { DarkModeToggle } from "@/components/theme/DarkModeToggle"
 import { LanguageSwitcher } from "@/components/settings/LanguageSwitcher"

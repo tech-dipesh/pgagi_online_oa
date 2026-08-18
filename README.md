@@ -12,7 +12,7 @@ This is the Frontend Only Dashboard with a mock datta  static of news, movie rec
 - Playwright
 Server Send Events
 - NexAuth
-- Prisma 7
+- Prisma 
 - react-i18next for Multi Language
 
 ## Data

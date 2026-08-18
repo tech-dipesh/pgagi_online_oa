@@ -19,10 +19,10 @@ export function LanguageSwitcher() {
       value={language}
       onChange={(event) => dispatch(setLanguage(event.target.value as SupportedLanguage))}
       aria-label="Choose language"
-      className="rounded-lg border border-line bg-canvas px-2 py-1.5 text-sm"
+      className="rounded-lg border border-line bg-canvas px-2 py-1.5 text-sm cursor-pointer"
     >
       {supportedLanguages.map((code) => (
-        <option key={code} value={code}>
+        <option key={code} value={code} className="cursor-pointer">
           {languageLabels[code]}
         </option>
       ))}

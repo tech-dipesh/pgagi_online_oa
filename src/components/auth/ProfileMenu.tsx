@@ -19,7 +19,7 @@ export function ProfileMenu() {
       <button
         type="button"
         onClick={() => setOpen((value) => !value)}
-        className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full bg-tech font-mono text-xs font-medium text-white"
+        className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full bg-tech font-mono text-xs font-medium text-white cursor-pointer"
       >
         {session.user.image ? (
           <Image src={session.user.image} alt="" width={36} height={36} className="h-full w-full object-cover" />

@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server"
 import bcrypt from "bcryptjs"
+import {z} from "zod"
 import { prisma } from "@/lib/prisma"
 import { signupSchema } from "@/lib/validation/auth"
 
@@ -8,7 +9,7 @@ export async function POST(request: Request) {
   const parsed = signupSchema.safeParse(body)
 
   if (!parsed.success) {
-    return NextResponse.json({ error: parsed.error.flatten() }, { status: 400 })
+    return NextResponse.json({ error: z.treeifyError(parsed.error) }, { status: 400 })
   }
 
   const existingUser = await prisma.user.findUnique({ where: { email: parsed.data.email } })

@@ -124,7 +124,7 @@ export function ContentCard({ item, dragHandleProps }: ContentCardProps) {
               type="button"
               onClick={() => dispatch(toggleFavorite(item.id))}
               aria-label={isFavorite ? "Remove from favorites" : "Add to favorites"}
-              className="text-ink-muted hover:text-finance"
+              className="text-ink-muted hover:text-finance cursor-pointer"
             >
               <Star size={16} fill={isFavorite ? "currentColor" : "none"} color={isFavorite ? "var(--color-finance)" : "currentColor"} />
             </button>
